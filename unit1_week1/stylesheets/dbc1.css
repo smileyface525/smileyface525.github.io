@@ -1,0 +1,21 @@
+* {
+	font-family: Arial, sans-serif;
+	color: 	#6B5A49;
+}
+body {
+	background-color: #FFD6AD;
+}
+
+#my_name {
+	font-style: bold;
+	color: #B29679;
+}
+
+.dark_color {
+	color: 	#594B3C;
+	font-weight: bold;
+}
+img {
+	height: 10%;
+	width: 10%;
+}
