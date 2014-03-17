@@ -1,0 +1,9 @@
+--- My website plan ---
+
+* It's going to be a website about me.
+* title is going to be 'Hello!'
+* I'm going to talk about these topics in vertical order
+--- Self introduction (Where I'm from, DOB, where  I've been...)
+--- What I like to do in my free time ( include some pictures)
+--- My history of programming (what I've leared, my thoughts)
+* At the end, the website is going to include a link to my email.
