@@ -1,0 +1,70 @@
+ body {
+   margin: 5% 15%;
+ 
+   font-family: arial, sans-serif;
+   text-align: center;
+   color: #5a5a5a;
+}
+ a {
+ 	text-decoration: none;
+ }
+ 
+ ol, ul {
+   list-style: none;
+ }
+ 
+ img {
+   
+ }
+ 
+ /* ---- header ---*/
+ #date {
+   font-style: italic;
+   
+ }
+ 
+ /* ---- nav ---- */
+ 
+ nav {
+   text-align: right;
+ }
+ 
+ nav li {
+   display: inline;
+   margin: 2%
+ }
+ 
+ /* ---- main ---- */
+ 
+main {
+  margin: 1%;
+  border-top: dotted 0.15em;
+  border-bottom: dotted 0.15em;
+  padding: 1%
+}
+
+section {
+  margin: 6%;  
+}
+
+section p {
+  margin: 2%
+}
+
+.blog {
+  text-align: left;
+  padding: 2%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.blog ul {
+  margin: 0;
+  padding: 0;
+}
+
+#back {
+  margin-top: 4%;
+}
+
+ 
