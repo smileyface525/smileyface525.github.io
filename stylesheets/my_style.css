@@ -5,10 +5,21 @@
    text-align: center;
    color: #5a5a5a;
 }
- a {
+a:link {
  	text-decoration: none;
- }
+    color: #5a5a5a;
+}
  
+a:visited {
+  color: #8D8D8D;
+}
+
+a:hover {
+    color: #444444;
+  
+}
+
+
  ol, ul {
    list-style: none;
  }
@@ -43,12 +54,41 @@ main {
   padding: 1%
 }
 
+
+.me {
+  font-weight: bold;
+  font-style: italic;
+  color: #6B6A6A;
+}
+
 section {
   margin: 6%;  
+  text-align: left
 }
 
 section p {
   margin: 2%
+}
+
+#col1 img {
+ display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#col2 ul {
+  list-style: disc;
+  padding-top: 3%;
+}
+
+#col2 img {
+  width: 20%;
+  float: right;
+  padding: 2%
+}
+
+#col3 {
+  clear: both;
 }
 
 .blog {
@@ -65,6 +105,12 @@ section p {
 
 #back {
   margin-top: 4%;
+}
+
+/* footer */
+
+footer {
+  clear: both;
 }
 
  
