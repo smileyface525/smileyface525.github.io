@@ -52,6 +52,7 @@ main {
   border-top: dotted 0.15em;
   border-bottom: dotted 0.15em;
   padding: 1%
+  text-align: left;
 }
 
 
