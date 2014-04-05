@@ -1,0 +1,47 @@
+<!DODTYPE html>
+<head>
+	<title>Enumerable#cycle</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/my_style.css">
+</head>
+<body>
+	<header>
+		<h1>Enumerable#cycle</h1>
+		<h3 id="date">April 4, 2014</p>
+	</header>
+	<main>
+		<article class="blog" >
+			<p class='italic'>
+				cycle(n=nil) {|obj| block } -> nil<br> 
+				cycle(n=nil) -> an_enumerator<br>
+				Enumerable#cycle calls block for each element repeadedly.
+			</p>
+			<h4>Arguments</h4>
+			<p>
+				If no argement is given, it calls the block on each element forever.
+				Otherwise, the block is called n times. 
+			</p>	
+			<h4>Returned Object</h4>
+			<p>If block is givien it returns the block defines. Otherwise, it returns an enumerator resulted from the method.</p>
+			<h4>Example</h4>
+			<p>Let's say that we want to find out the day of a certain date of the month and we want to create a method that does that for us. This is easily done using .cycle.
+			<div class="example">
+				<span class="comments"># Two parameters. The day of the first date of the month and the date of the day we're looking for.</span><br>
+				<span class='bold'>def</span> day_of_month (first_of_month, date)<br>
+				<div class="indented">
+					days = %w(Monday Tuesday Wednesday Thursday Friday Saturday Sunday)<br>
+					<span class="comments"># Rotate the days array so the day of the first date of the month becomes the first element of the array</span><br>
+					days.rotate!(days.index(first_of_month))<br>
+					<span class="comments"># Repeat the array for five times and return the date-th element of it.</span><br>
+					days.cycle(5).to_a.fetch(date-1)<br>
+				</div>
+				<span class='bold'>end</span><br><br>
+
+				day_of_month('Tuesday', 28) => 'Monday'
+			</div>
+		</article>
+		<p id="back"><a href="http://smileyface525.github.io">Go back to the main page</a></p>
+	</main>
+	<footer>
+		<p id="footer">Created by Eiko Seino</p>
+	</footer>
+</body>

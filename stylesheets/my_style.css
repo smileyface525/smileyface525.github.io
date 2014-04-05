@@ -2,7 +2,7 @@
    margin: 5% 15%;
  
    font-family: arial, sans-serif;
-   text-align: center;
+   text-align: left;
    color: #5a5a5a;
 }
 a:link {
@@ -28,7 +28,19 @@ a:hover {
    
  }
  
+ .bold {
+   font-weight: bold;
+ }
+ 
+ .italic {
+   font-style: italic;
+ }
+ 
  /* ---- header ---*/
+ header {
+   text-align: center;
+ }
+ 
  #date {
    font-style: italic;
    
@@ -103,6 +115,22 @@ section p {
   margin: 0;
   padding: 0;
 }
+
+.example {
+  background-color: rgb(202, 204, 199);
+  padding: 2%;
+}
+
+main .comments {
+  font-size: 0.9em;
+  font-style: italic;
+  color: grey;
+}
+
+main .indented {
+  margin-left: 2em;   
+}
+ 
 
 #back {
   margin-top: 4%;
