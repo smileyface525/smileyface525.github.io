@@ -1,0 +1,78 @@
+<!DODTYPE html>
+<head>
+	<title>Classes in Ruby</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/my_style.css">
+</head>
+<body>
+	<header>
+		<h1>Classes in Ruby</h1>
+		<h3 id="date">April 12, 2014</p>
+	</header>
+	<main>
+		<article class="blog">
+			<p>
+				Before we talk about classes, let's talk a little bit about OOP(Object-Oriented Programming).<br><br>
+				In general, programming is all about taking actions with information(data). Good example would be a HTML form: user enters her information into a form, a program validates it, then stores the information in the database. You can ultimately say that what the program is doing is just taking nouns(data) and using verbs to do something with the nouns. In procedural programming(without classes), its focus is on the verbs. Do this, then do that. With OOP, the focus is on the nouns, and that is made possible by using objects. But objects  need a guide to tell them what to do, and taht's where classes come into the mix.<br><br>
+				To simply put, a class is a collection of methods designed to work together to do 'something' with  a particular information, and in Ruby, the information is called instance variables and instance methods are the ones that do 'something' with them. <br><br>
+				Let's say that we want to create a class called Users. (By the way, in Ruby, the first letters of class names are usually capitalized.) The first instance method we define is #initialize which takes two parameters first_name and last_name. This method is called every time an instance of this Users class is instantiated. Inside initialize, instance variables @first_name and @last_name is created using the arguments provided. The next instance method we define is called create_username. This method takes one parameter which becomes @username inside of it. #create_password is similar to #create_username. It assigns @password to the password provided. The last four instance methods #first_name, #last_name,  #username and #password are used to access each instance variable that was previously defined.
+			</p>
+			<div class="example">
+				Class Users<br><br>
+				<div class="indented">	
+					<span class="bold">def</span> <span class="italic">initialize(first_name, last_name)</span>
+					<div class="indented">
+						@first_name = first_name<br>
+						@last_name = last_name<br>
+					</div>
+					end
+				</div><br>
+				<div class="indented">
+					<span class="bold">def</span> <span class="italic">create_username(username)</span>
+					<div class="indented">@username = username</div>
+					end
+				</div><br>
+				<div class="indented">
+					<span class="bold">def</span> <span class="italic">create_password(password)</span>
+					<div class="indented">@passoword = password</div>
+					end
+				</div><br>
+
+				<div class="indented">
+					<span class="bold">def</span> <span class="italic">first_name</span>
+					<div class="indented">@first_name</div>
+					end
+				</div><br>
+
+				<div class="indented">
+					<span class="bold">def</span> <span class="italic">last_name</span>
+					<div class="indented">@last_name</div>
+					end
+				</div><br>
+
+				<div class="indented">
+					<span class="bold">def</span> <span class="italic">username</span>
+					<div class="indented">@username</div>
+					end
+				</div><br>
+
+				<div class="indented">
+					<span class="bold">def</span> <span class="italic">password</span>
+					<div class="indented">@password</div>
+					end
+				</div><br>
+				end<br><br>
+				user = Users.new('eiko', 'seino') <span class="comments"># new instance of Users is created</span><br>
+				user.create_username(username) <span class="comments"># username called 'username' is created</span><br>
+				user.password(password) <span class="comments"># password called 'password' is created</span><br>
+				user.lastname <span class="comments"># => 'seino'</span><br>
+				user.username <span class="comments"># => 'username'</span><br>
+
+			</div>
+			
+		</article>
+		<p id="back"><a href="http://smileyface525.github.io">Go back to the main page</a></p>
+	</main>
+	<footer>
+		<p id="footer">Created by Eiko Seino</p>
+	</footer>
+</body>

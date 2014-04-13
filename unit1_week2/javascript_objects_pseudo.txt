@@ -1,0 +1,15 @@
+Set secretNumber  to 5
+Set secretNumber to 7
+Set password to 'smileyface'
+Set password to 'just open the door'
+Set allowedIn to true;
+Set allowedIn to false;
+Set members to ['eiko', 'alex', 'mookie'];
+Set members to ['John', 'alex', 'mookie'];
+Set members to ['John', 'alex', 'mookie', 'Mary'];
+Set members[0] to 'John'
+Set members[3] to 'Mary'
+Set codeVerifier to 'something'
+Set codeVerifier to /bo*/
+Set codeVarifier to /[abc].k..y$/
+Set codeVarifier to /^[a-c].+k..y$/

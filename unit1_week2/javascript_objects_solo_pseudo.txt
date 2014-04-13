@@ -1,0 +1,49 @@
+1. Define a variable adam and use object literal notation to assign this variable 
+   the value of a JavaScript Object object with no properties.
+ 
+ Set adam to a new array.
+
+2. Give adam a name property with the value "Adam".
+
+	Set adam.name to Adam
+ 
+3. Add a spouse property to terah and assign it the value of adam.
+ 
+ 	Set terah.spouse to adam
+
+4. Change the value of the terah weight property to 125.
+ 	
+ 	Set terah.weight to 125
+
+5. Remove the eyeColor property from terah.
+ 
+ 	Pop eyeColor from terah
+
+6. Add a spouse property to adam and assign it the value of terah.
+ 	
+ 	Set adam.spouse to terah
+
+7. Add a children property to terah and and use object literal notation to assign 
+   this variable the value of a JavaScript Object object with no properties
+ 
+ 	Set terah.children to a new array
+
+8. Add a carson property to the value of the terah children property and assign it 
+  the value of an object with the property name with a value of "Carson".
+ 	
+ 	Set terah.children.carson to "Carson"
+
+9. Add a carter property to the value of the terah children property and assign it 
+   the value of an object with the property name with a value of "Carter".
+ 	
+ 	Set terah.children.carter to "Carter"
+
+10. Add a colton property to the value of the terah children property and assign it 
+    the value of an object with the property name with a value of "Colton".
+ 
+ 	Set terah.children.colton to "Colton"
+
+11. Add a children property to adam and assign it the value of terah children.
+ 
+ 	Set adam.children to terah.children
+ 

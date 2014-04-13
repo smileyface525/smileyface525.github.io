@@ -1,0 +1,20 @@
+run to a tree close to an ogre
+climb up on the tree and shoot an arrow to kill the ogre
+there are three ogres
+
+Create Tharin object
+
+run
+climb up
+shoot
+climb down
+
+run 
+climb up
+shoot
+climb down
+
+run 
+climb up
+shoot 
+climb down
