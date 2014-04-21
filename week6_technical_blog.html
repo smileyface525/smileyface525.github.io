@@ -1,0 +1,103 @@
+<!DODTYPE html>
+<head>
+	<title>Functional vs Object Oriented Programming</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/my_style.css">
+</head>
+<body>
+	<header>
+		<h1>Functional vs Object Oriented Programming</h1>
+		<h3 id="date">April 20, 2014</p>
+	</header>
+	<main>
+		<article class="blog">
+			<p>
+				In general, programming is all about taking actions with information(data). Good example would be a HTML form: user enters her information into a form, a program validates it, then stores the information in the database. You can ultimately say that what the program is doing is just taking nouns(data) and using verbs to do something with the nouns. In functional programming, its focus is on the verbs. Do this, then do that. With OOP, the focus is on the nouns, and that is made possible by using classes and objects: Class being a bluprint of what an object is supposed to do.<br><br>
+				Easiest way to see the differences is to look at some expamples...<br><br>
+				First, let's assume that we have a online form which collects a few imformation from users: Fist name, last name and also username and password of their choice. And we want to organize the information in some way so that ultimately we can connect to the database and permanetly store that information.  <br><br>
+				In OOP...
+			</p>
+
+			<div class="example">
+				Class Users<br><br>
+				<div class="indented">	
+					<span class="italic">attr_accessor</span> :first_name, :last_name, :username, :password
+				</div><br>
+				<div class="indented">	
+					<span class="bold">def</span> <span class="italic">initialize(first_name, last_name)</span>
+					<div class="indented">
+						@first_name = first_name<br>
+						@last_name = last_name<br>
+						@username = ''
+						@password = ''
+					</div>
+					end
+				</div><br>
+				
+				<div class="indented">
+					<span class="bold">def</span> <span class="italic">password</span>
+					<div class="indented">@password</div>
+					end
+				</div><br>
+				end<br><br>
+				eiko = Users.new('eiko', 'seino') <span class="comments"># new instance of Users is created</span><br>
+				eiko.username=('eiko's username') <span class="comments"># username called 'eiko's username' is created</span><br>
+				eiko.password=('eiko's password') <span class="comments"># password called 'eiko's password' is created</span><br>
+				eiko.lastname <span class="comments"># => 'seino'</span><br>
+				eiko.username <span class="comments"># => 'eiko's username'</span><br>
+
+			</div>
+
+			<p>In functional programming...</p>
+
+			<div class="example">
+				first_name = 'eiko'<br>
+				last_name = 'seino'<br>
+				username = 'eiko's username'<br>
+				password = 'eiko's password'<br>
+
+				puts first_name <span class="comments"># => 'eiko'</span><br>
+				puts last_name <span class="comments"># => 'seino'</span><br>
+
+			</div>
+
+			<p>
+				The real difference shows if we have multiple users. Say we have another user who has filled out the form.<br>
+				In OOP...
+			</p>
+
+			<div class="example">
+				<p class="comments"># Let's say Alex Parish has filled out the form and submitted it</p>
+				alex = Users.new('alex', 'parish')<br>
+				alex.username=('alex's username') <span class="comments"># username called 'alex's username' is created</span><br>
+				alex.password=('alex's password') <span class="comments"># password called 'alex's password' is created</span><br>
+				alex.lastname <span class="comments"># => 'parish'</span><br>
+				alex.username <span class="comments"># => 'alex's username'</span><br>
+			</div>
+			<p>In functional programming...</p>
+			<div class="example">
+				alex_first_name = 'alex'<br>
+				alex_last_name = 'parish'<br>
+				alex_username = 'alex's username'<br>
+				alex_password = 'alex's password'<br>
+
+				puts alex_first_name <span class="comments"># => 'alex'</span><br>
+				puts alex_last_name <span class="comments"># => 'parish'</span><br>
+
+			</div>
+			<P>
+				The difference may not be so obvious but there are a few crucial differences between the two.<br>
+				When we tried to add Eiko, the OOP version of the code is longer since we had to define the class itself. However, when we added Alex, 
+				notice that we only had to create an instance of alex using the same class Users, and we were able to change and access his information just by an calling appropriate method.<br>
+				On the other hand, iin functional programming, not only we had do excalty the same thing we needed to do with Eiko but also we had to change the variable names so that we don't override Eiko's information.<br><br>
+				So, what does this mean? Is OOP better than functional programming?<br><br>
+				Not necessarily. It just means that if we're in a situation that we have to so the same things to a different nouns(objects), OOP may be the better choice. But if we need to work on one particular thing and do many different things with it(by usings lots of verbs), functional programming maight be the way to go.
+			</p>
+
+			
+		</article>
+		<p id="back"><a href="http://smileyface525.github.io">Go back to the main page</a></p>
+	</main>
+	<footer>
+		<p id="footer">Created by Eiko Seino</p>
+	</footer>
+</body>
