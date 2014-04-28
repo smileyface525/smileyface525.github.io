@@ -1,0 +1,77 @@
+<!DODTYPE html>
+<head>
+	<title>SQL</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/my_style.css">
+</head>
+<body>
+	<header>
+		<h1>SQL</h1>
+		<h3 id="date">April 27, 2014</p>
+	</header>
+	<main>
+		<article class="blog">
+			<h2>SQL Injection</h2>
+			<p>
+			SQL injection is a type of hacking where the hackers attempt to ‘inject’ a certain commands to get information that is supposed to be confidential. The way those hackers inject their commands is to use web application forms (like login form) where users supply their information and the web sever sends that information to the database. If a web application does not have proper validation or coding in their both coding and queries, A hacker can create, read, update, alter, or delete data stored in the back-end database.	
+			</p>
+			<h3>How to Prevent SQL Injection</h3>
+			<ol>
+				<li>Proper input validation</li>
+				<li>Making sure that the users have minimum privilege to access the database when they supply
+   					their infotmation.
+				</li>
+				<li>Carefully written queries. For example, using stored statements might come in handy.</li>
+			</ol>
+			<h2>SQL vs NoSQL</h2>
+			<h3>SQL</h3>
+			<ol>
+				<li>
+					<p>Pros</p>
+					<ol>
+						<li>You get the result (data) you asked for.</li>
+						<li>Suited for banks, stock markets, billing/accounting databases.</li>
+						<li>When properly normalized, it's fast and efficient.</li>
+					</ol>
+				</li>
+				<li>
+					<p>Cons</p>
+					<ol>
+						<li>Performance issues when it comes to big websites with big databases and high volume of traffic.</li>
+						<li>Large-scale programming projects using complex data types and hierarchies, such as XML, are difficult to incorporate into SQL.</li>
+						<li>Modification of database can be time consuming.</li>
+					</ol>
+				</li>
+			</ol>
+			<h3>NoSQL</h3>
+			<ol>
+				<li>
+					<p>Pros</p>
+					<ol>
+						<li>Is a document database, which has a key  and value pairing where value can be a variety of objects.</li>
+						<li>Suitable for handling large amounts of data.</li>
+						<li>Generally suited for OOP.</li>
+					</ol>
+				</li>
+				<li>
+					<p>Cons</p>
+					<ol>
+						<li>Does not guarantee returning correct data.</li>
+						<li>Cannot change the database so easily.</li>
+					</ol>
+				</li>
+			</ol>
+			<h2>Query Optimization</h2>
+			<ol>
+				<li>When inserting multiple rows, its better to have one query with multiple values than multile wueries with a single value.</li>
+				<li>Use of indexes</li>
+				<li>Limit the use of 'HAVING' only to after the rows are selected.</li>
+				<li>Minimize the number of subqueries.</li>
+				<li>Use 'EXISTS', 'IN' and 'JOIN' appropriately.</li>
+			</ol>	
+		</article>
+		<p id="back"><a href="http://smileyface525.github.io">Go back to the main page</a></p>
+	</main>
+	<footer>
+		<p id="footer">Created by Eiko Seino</p>
+	</footer>
+</body>
