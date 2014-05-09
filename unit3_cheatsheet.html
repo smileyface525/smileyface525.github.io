@@ -1,24 +1,48 @@
 <!DODTYPE html>
 <head>
-	<title>title</title>
+	<title>SQL Cheetsheet</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/my_style.css">
 </head>
 <body>
 	<header>
-		<h1>title</h1>
-		<h3 id="date">Month Date, 2014</p>
+		<h1>SQL Cheetsheet</h1>
+		<h3 id="date">May 4, 2014</p>
 	</header>
 	<main>
 		<article class="blog">
-			<h2></h2>
-			<p>
-			</p>
-			<h3></h3>
-			<ol>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ol>
+			<h2>SELECT</h2>
+			<div class="example">
+				<p>SELECT population FROM world WHERE name='GERMANY'</p> 
+			</div>
+			<p>Using a mathimatical operator...</p>
+			<div class="example">
+				<p>SELECT name, area FROM world WHERE area <span class="bold">></span> 50000</p>
+			</div>
+			<p>Using <span class="bold">AND</span>...</p>
+			<div class="example">
+				<p>SELECT name, continent FROM world WHERE area < <span class="bold">AND</span> dgp > 50000</p>
+			</div>
+			<p>Using <span class="bold">IN</span>...</p>
+			<div class="example">
+				<p>SELECT name, polulation FROM world WHERE name <span class="bold">IN</span> ('Finland', 'Norway', 'Denmark', 'Sweden')</p>
+			</div>
+			<p>Using <span class="bold">LIKE</span> and <span class="bold">%</span>...</p>
+			<div class="example">
+				<p>SELECT name FROM world WHERE name <span class="bold">LIKE</span> "D<span class="bold">%</span>"</p>
+			</div>
+			<p>Using <span class="bold">BETWEEN</span>...</p>
+			<div class="example">
+				<p>SELECT name, area FROM world WHERE area <span class="bold">BETWEEN</span> 207600 AND 244820</p>
+			</div>
+			<p>Using <span class="bold">LENGTH</span> and <span class="bold">COUNT</span>...</p>
+			<div class="example">
+				<p>SELECT name, <span class="bold">LENGTH</span>(name) FROM world WHERE <span class="bold">LENGTH</span>(name) = 5</p>
+				<p>SELECT <span class="bold">COUNT</span>(subject) FROM nobel WHERE subject = 'Chemistry'</p>
+			</div>
+			<p>Using <span class="bold">NOT IN</span>...</p>
+			<div class="example">
+				<p>SELECT COUNT(DISTINCT yr) FROM nobel WHERE yr <span class="bold">NOT IN</span> (SELCT DISTINCT yr FROM nobel WHERE subject = 'Medicine'</p>
+			</div>
 		</article>
 		<p id="back"><a href="http://smileyface525.github.io">Go back to the main page</a></p>
 	</main>
